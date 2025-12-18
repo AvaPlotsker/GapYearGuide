@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - GapYearGuide</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="logo">GapYearGuide</h1>
+                    <p class="tagline">Find Your Perfect Seminary or Yeshiva in Israel</p>
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Browse Schools</a>
+                    <a href="favorites.html" class="nav-link">My Favorites</a>
+                    <a href="recommendations.html" class="nav-link">Recommendations</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                </nav>
+                <a href="profile.html" class="profile-icon active" title="My Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Profile Header -->
+            <section class="profile-header">
+                <div class="profile-avatar">
+                    <div class="avatar-circle">SG</div>
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-name">Sarah Goldberg</h2>
+                    <p class="profile-email">sarah.g@email.com</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Favorites</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24</span>
+                        <span class="stat-label">Viewed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Matches</span>
+                    </div>
+                </div>
+                <button id="logoutBtn" class="btn btn-logout">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    Logout
+                </button>
+            </section>
+
+            <!-- Personal Information Section -->
+            <section class="profile-section">
+                <div class="section-header">
+                    <h3>Personal Information</h3>
+                    <button class="btn btn-secondary btn-small">Edit</button>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">Full Name</div>
+                        <div class="detail-value">Sarah Goldberg</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Email</div>
+                        <div class="detail-value">sarah.g@email.com</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Current School</div>
+                        <div class="detail-value">Central High School</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Location</div>
+                        <div class="detail-value">New York, NY</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Graduation Year</div>
+                        <div class="detail-value">2025</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Password</div>
+                        <div class="detail-value">••••••••</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preferences Section -->
+            <section class="profile-section">
+                <div class="section-header">
+                    <h3>My Preferences</h3>
+                    <button class="btn btn-secondary btn-small">Edit</button>
+                </div>
+                <div class="detail-grid">
+                    <div class="detail-item">
+                        <div class="detail-label">Preferred Type</div>
+                        <div class="detail-value">Seminary</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Hashkafa</div>
+                        <div class="detail-value">Modern Orthodox</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Location Preference</div>
+                        <div class="detail-value">Jerusalem</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">School Size</div>
+                        <div class="detail-value">Medium (50-150)</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Budget Range</div>
+                        <div class="detail-value">$20,000 - $25,000</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Program Focus</div>
+                        <div class="detail-value">Academic & Spiritual Growth</div>
+                    </div>
+                </div>
+
+                <div class="preference-section">
+                    <h4>Important Features</h4>
+                    <div class="feature-tags">
+                        <span class="feature-tag active">3 Meals/Day</span>
+                        <span class="feature-tag active">Close to Kotel</span>
+                        <span class="feature-tag active">Good Transportation</span>
+                        <span class="feature-tag">Shabbos Out Options</span>
+                        <span class="feature-tag active">Academic Focus</span>
+                        <span class="feature-tag">Small Class Sizes</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+                <a href="favorites.html" class="quick-link-card">
+                    <div class="quick-link-icon">❤️</div>
+                    <h4>My Favorites</h4>
+                    <p>8 schools saved</p>
+                </a>
+                <a href="recommendations.html" class="quick-link-card">
+                    <div class="quick-link-icon">✨</div>
+                    <h4>Recommendations</h4>
+                    <p>6 schools match your preferences</p>
+                </a>
+                <a href="index.html" class="quick-link-card">
+                    <div class="quick-link-icon">🔍</div>
+                    <h4>Browse Schools</h4>
+                    <p>Explore all programs</p>
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Edit Personal Info Modal -->
+    <div id="editPersonalModal" class="modal hidden">
+        <div class="modal-content detail-modal">
+            <div class="modal-header">
+                <h2>Edit Personal Information</h2>
+                <button class="close-btn" onclick="closeEditPersonal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="editPersonalForm" class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="editFirstName">First Name</label>
+                            <input type="text" id="editFirstName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="editLastName">Last Name</label>
+                            <input type="text" id="editLastName" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail">Email</label>
+                        <input type="email" id="editEmail" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editCurrentSchool">Current School</label>
+                        <input type="text" id="editCurrentSchool" class="form-input" placeholder="Central High School">
+                    </div>
+                    <div class="form-group">
+                        <label for="editLocation">Location</label>
+                        <input type="text" id="editLocation" class="form-input" placeholder="New York, NY">
+                    </div>
+                    <div class="form-group">
+                        <label for="editGraduationYear">Graduation Year</label>
+                        <input type="number" id="editGraduationYear" class="form-input" placeholder="2025" min="2024" max="2030">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Preferences Modal -->
+    <div id="editPreferencesModal" class="modal hidden">
+        <div class="modal-content detail-modal">
+            <div class="modal-header">
+                <h2>Edit My Preferences</h2>
+                <button class="close-btn" onclick="closeEditPreferences()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="editPreferencesForm" class="auth-form">
+                    <div class="form-group">
+                        <label>Preferred Type(s) - Select all that apply</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="schoolType" value="seminary">
+                                <span>Seminary</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="schoolType" value="yeshiva">
+                                <span>Yeshiva</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="schoolType" value="gap-year-program">
+                                <span>Gap Year Program</span>
+                            </label>
+                        </div>
+                        <a href="#" id="showComparisonGuideProfile" class="form-hint link" style="display: block; margin-top: 0.75rem; font-size: 0.875rem;">Not sure which type is right for you? See comparison guide</a>
+                    </div>
+                    <div class="form-group">
+                        <label>Hashkafa(s) - Select all that apply</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="hashkafa" value="modern-orthodox">
+                                <span>Modern Orthodox</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="hashkafa" value="yeshivish">
+                                <span>Yeshivish</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="hashkafa" value="chassidish">
+                                <span>Chassidish</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="hashkafa" value="mixed">
+                                <span>Mixed</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Location Preference(s) - Select all that apply</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="location" value="jerusalem">
+                                <span>Jerusalem</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="location" value="ramat-beit-shemesh">
+                                <span>Ramat Beit Shemesh</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="location" value="bnei-brak">
+                                <span>Bnei Brak</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="location" value="safed">
+                                <span>Safed</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="location" value="tel-aviv">
+                                <span>Tel Aviv</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editSizePref">School Size Preference</label>
+                        <select id="editSizePref" class="form-input" required>
+                            <option value="small">Small (< 50)</option>
+                            <option value="medium">Medium (50-150)</option>
+                            <option value="large">Large (> 150)</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="editMinBudget">Min Budget ($)</label>
+                            <input type="number" id="editMinBudget" class="form-input" placeholder="20000" min="0" step="1000">
+                        </div>
+                        <div class="form-group">
+                            <label for="editMaxBudget">Max Budget ($)</label>
+                            <input type="number" id="editMaxBudget" class="form-input" placeholder="25000" min="0" step="1000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editProgramFocus">Program Focus</label>
+                        <input type="text" id="editProgramFocus" class="form-input" placeholder="Academic & Spiritual Growth">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Save Preferences</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison Guide Modal -->
+    <div id="comparisonGuideModal" class="modal hidden">
+        <div class="modal-content detail-modal" style="max-width: 800px;">
+            <div class="modal-header">
+                <h2>Seminary vs Yeshiva vs Gap Year Program</h2>
+                <button id="closeComparisonModal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Not sure which type of program is right for you? Here's a helpful comparison:</p>
+
+                <div class="comparison-grid" style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+                    <div class="comparison-card" style="padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--radius-md); border: 2px solid var(--border-color);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.75rem;">Seminary (Women)</h3>
+                        <p style="margin-bottom: 1rem; color: var(--text-secondary);">Religious studies program designed specifically for young women after high school.</p>
+                        <div style="margin-bottom: 1rem;">
+                            <strong style="color: var(--text-primary);">Best For:</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                                <li>Women seeking intensive Torah study</li>
+                                <li>Deepening Jewish knowledge and practice</li>
+                                <li>Structured religious environment</li>
+                                <li>Building lifelong friendships</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong style="color: var(--text-primary);">Typical Features:</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                                <li>Daily Torah classes and shiurim</li>
+                                <li>Focus on Jewish texts and philosophy</li>
+                                <li>Community living experience</li>
+                                <li>Academic and spiritual growth</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="comparison-card" style="padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--radius-md); border: 2px solid var(--border-color);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.75rem;">Yeshiva (Men)</h3>
+                        <p style="margin-bottom: 1rem; color: var(--text-secondary);">Religious studies program designed specifically for young men after high school.</p>
+                        <div style="margin-bottom: 1rem;">
+                            <strong style="color: var(--text-primary);">Best For:</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                                <li>Men seeking intensive Gemara study</li>
+                                <li>Developing Torah scholarship skills</li>
+                                <li>Structured religious environment</li>
+                                <li>Building Torah foundations</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong style="color: var(--text-primary);">Typical Features:</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                                <li>Daily Gemara and Halacha study</li>
+                                <li>Chavrusa (study partner) learning</li>
+                                <li>Focus on Talmudic analysis</li>
+                                <li>Rabbinical guidance and mentorship</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="comparison-card" style="padding: 1.5rem; background: var(--bg-secondary); border-radius: var(--radius-md); border: 2px solid var(--border-color);">
+                        <h3 style="color: var(--primary-color); margin-bottom: 0.75rem;">Gap Year Program</h3>
+                        <p style="margin-bottom: 1rem; color: var(--text-secondary);">A more flexible program that may combine study, travel, volunteering, and personal exploration.</p>
+                        <div style="margin-bottom: 1rem;">
+                            <strong style="color: var(--text-primary);">Best For:</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                                <li>Students wanting a mix of experiences</li>
+                                <li>Exploring Israel beyond the classroom</li>
+                                <li>More flexibility in schedule and focus</li>
+                                <li>Combining study with travel/volunteering</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong style="color: var(--text-primary);">Typical Features:</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                                <li>Varied schedule and activities</li>
+                                <li>Travel opportunities throughout Israel</li>
+                                <li>Volunteer and community service options</li>
+                                <li>Balance of structure and flexibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: var(--bg-color); border-radius: var(--radius-md); border-left: 4px solid var(--primary-color);">
+                    <h4 style="margin-bottom: 0.75rem;">Still Not Sure?</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">That's okay! You can select multiple types in your preferences to see schools that match any of them. Many programs also have overlapping features, so you're not limited to one category.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GapYearGuide. All rights reserved.</p>
+            <p>Helping students find their perfect gap year program in Israel.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/recommendations.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>

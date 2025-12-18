@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GapYearGuide - Find Your Perfect Seminary or Yeshiva in Israel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="logo">GapYearGuide</h1>
+                    <p class="tagline">Find Your Perfect Seminary or Yeshiva in Israel</p>
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link active">Browse Schools</a>
+                    <a href="favorites.html" class="nav-link">My Favorites</a>
+                    <a href="recommendations.html" class="nav-link">Recommendations</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                </nav>
+                <a href="profile.html" class="profile-icon" title="My Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Search and Filters Section -->
+            <section class="search-section">
+                <!-- Type Selector -->
+                <div class="type-selector">
+                    <label class="type-selector-label">I'm looking for:</label>
+                    <div class="type-options">
+                        <label class="type-option">
+                            <input type="checkbox" name="typeFilter" value="seminary">
+                            <span>Seminary</span>
+                        </label>
+                        <label class="type-option">
+                            <input type="checkbox" name="typeFilter" value="yeshiva">
+                            <span>Yeshiva</span>
+                        </label>
+                        <label class="type-option">
+                            <input type="checkbox" name="typeFilter" value="gap-year-program">
+                            <span>Gap Year Program</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search schools by name, location, or hashkafa..." class="search-input">
+                    <button id="searchBtn" class="btn btn-primary">Search</button>
+                </div>
+
+                <div class="filters">
+                    <button id="filterToggle" class="btn btn-secondary">Filters</button>
+                    <div id="filterPanel" class="filter-panel hidden">
+                        <div class="filter-groups-row">
+                            <div class="filter-group">
+                                <div class="filter-dropdown-header" data-filter="location">
+                                    <label>Location</label>
+                                    <span class="filter-dropdown-arrow">▼</span>
+                                </div>
+                                <div class="filter-dropdown-content">
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="locationFilter" value="jerusalem">
+                                            <span>Jerusalem</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="locationFilter" value="ramat-beit-shemesh">
+                                            <span>Ramat Beit Shemesh</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="locationFilter" value="bnei-brak">
+                                            <span>Bnei Brak</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="locationFilter" value="safed">
+                                            <span>Safed</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="locationFilter" value="tel-aviv">
+                                            <span>Tel Aviv</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-group">
+                                <div class="filter-dropdown-header" data-filter="hashkafa">
+                                    <label>Hashkafa</label>
+                                    <span class="filter-dropdown-arrow">▼</span>
+                                </div>
+                                <div class="filter-dropdown-content">
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="hashkafaFilter" value="modern-orthodox">
+                                            <span>Modern Orthodox</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="hashkafaFilter" value="yeshivish">
+                                            <span>Yeshivish</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="hashkafaFilter" value="chassidish">
+                                            <span>Chassidish</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="hashkafaFilter" value="mixed">
+                                            <span>Mixed</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-group">
+                                <div class="filter-dropdown-header" data-filter="academicLevel">
+                                    <label>Academic Level</label>
+                                    <span class="filter-dropdown-arrow">▼</span>
+                                </div>
+                                <div class="filter-dropdown-content">
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="academicLevelFilter" value="beginner">
+                                            <span>Beginner</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="academicLevelFilter" value="intermediate">
+                                            <span>Intermediate</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="academicLevelFilter" value="advanced">
+                                            <span>Advanced</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="academicLevelFilter" value="mixed">
+                                            <span>Mixed Levels</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-group">
+                                <div class="filter-dropdown-header" data-filter="size">
+                                    <label>Size</label>
+                                    <span class="filter-dropdown-arrow">▼</span>
+                                </div>
+                                <div class="filter-dropdown-content">
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="sizeFilter" value="small">
+                                            <span>Small (&lt; 50)</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="sizeFilter" value="medium">
+                                            <span>Medium (50-150)</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="sizeFilter" value="large">
+                                            <span>Large (&gt; 150)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-actions">
+                            <button id="applyFilters" class="btn btn-primary">Apply Filters</button>
+                            <button id="clearFilters" class="btn btn-secondary">Clear</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-controls">
+                    <button id="compareBtn" class="btn btn-accent" disabled>Compare Selected (<span id="compareCount">0</span>)</button>
+                    <button id="clearCompareBtn" class="btn btn-secondary">Clear Selection</button>
+                </div>
+            </section>
+
+            <!-- Recommendations Section -->
+            <section class="recommendations-banner" id="recommendationsBanner">
+                <h3>✨ Recommended For You</h3>
+                <div id="recommendationsPreview" class="recommendations-preview">
+                    <!-- Top 3 recommended schools will load here -->
+                </div>
+                <a href="recommendations.html" class="btn btn-secondary">View All Recommendations</a>
+            </section>
+
+            <!-- Schools Grid -->
+            <section class="schools-section">
+                <div id="schoolsGrid" class="schools-grid">
+                    <!-- Schools will be dynamically loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Comparison Modal -->
+    <div id="comparisonModal" class="modal hidden">
+        <div class="modal-content comparison-modal">
+            <div class="modal-header">
+                <h2>Compare Schools</h2>
+                <button id="closeModal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="comparisonTable">
+                    <!-- Comparison content will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- School Detail Modal -->
+    <div id="detailModal" class="modal hidden">
+        <div class="modal-content detail-modal">
+            <div class="modal-header">
+                <h2 id="detailSchoolName"></h2>
+                <button id="closeDetailModal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="detailContent" class="detail-content">
+                    <!-- School details will be dynamically loaded here -->
+                </div>
+
+                <!-- Reviews Section -->
+                <div class="detail-section">
+                    <h3>User Reviews</h3>
+                    <div id="schoolReviews" class="reviews-list">
+                        <p class="loading-reviews">Loading reviews...</p>
+                    </div>
+
+                    <!-- Link to Reviews Page -->
+                    <a href="reviews.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Write a Review</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GapYearGuide. All rights reserved.</p>
+            <p>Helping students find their perfect gap year program in Israel.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/comparison.js"></script>
+    <script src="js/recommendations.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

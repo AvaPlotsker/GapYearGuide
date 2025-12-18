@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations - GapYearGuide</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="logo">GapYearGuide</h1>
+                    <p class="tagline">Find Your Perfect Seminary or Yeshiva in Israel</p>
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">Browse Schools</a>
+                    <a href="favorites.html" class="nav-link">My Favorites</a>
+                    <a href="recommendations.html" class="nav-link active">Recommendations</a>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                </nav>
+                <a href="profile.html" class="profile-icon" title="My Profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <section class="page-header">
+                <h2 class="page-title">Recommended For You</h2>
+                <p class="page-description">Schools that match your preferences and interests</p>
+            </section>
+
+            <!-- Match Info Banner -->
+            <section class="match-info-banner">
+                <div class="match-info-content">
+                    <div class="match-info-icon">✨</div>
+                    <div class="match-info-text">
+                        <h3>Loading your matches...</h3>
+                        <p>Analyzing your preferences...</p>
+                    </div>
+                    <a href="profile.html" class="btn btn-secondary btn-small">Update Preferences</a>
+                </div>
+            </section>
+
+            <!-- View Controls -->
+            <section class="recommendations-controls">
+                <div class="view-controls">
+                    <button id="compareBtn" class="btn btn-accent" disabled>Compare Selected (<span id="compareCount">0</span>)</button>
+                    <button id="clearCompareBtn" class="btn btn-secondary">Clear Selection</button>
+                </div>
+                <div class="sort-controls">
+                    <label for="sortRecommendations">Sort by:</label>
+                    <select id="sortRecommendations" class="filter-select">
+                        <option value="match">Best Match</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="cost">Lowest Cost</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Recommendations Grid -->
+            <section class="recommendations-section">
+                <div id="recommendationsGrid" class="schools-grid">
+                    <!-- Recommended schools will be dynamically loaded here -->
+                </div>
+            </section>
+
+            <!-- Browse All Section -->
+            <section class="browse-all-section">
+                <h3>Didn't find what you're looking for?</h3>
+                <p>Browse all schools or update your preferences to get better recommendations.</p>
+                <div class="browse-actions">
+                    <a href="index.html" class="btn btn-primary">Browse All Schools</a>
+                    <a href="profile.html" class="btn btn-secondary">Update Preferences</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Comparison Modal -->
+    <div id="comparisonModal" class="modal hidden">
+        <div class="modal-content comparison-modal">
+            <div class="modal-header">
+                <h2>Compare Schools</h2>
+                <button id="closeModal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="comparisonTable" class="comparison-table"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- School Detail Modal -->
+    <div id="detailModal" class="modal hidden">
+        <div class="modal-content detail-modal">
+            <div class="modal-header">
+                <h2 id="detailSchoolName"></h2>
+                <button id="closeDetailModal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="detailContent" class="detail-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GapYearGuide. All rights reserved.</p>
+            <p>Helping students find their perfect gap year program in Israel.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/comparison.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/recommendations.js"></script>
+</body>
+</html>
