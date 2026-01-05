@@ -1,0 +1,1047 @@
+[
+  {
+    "name": "Nishmat",
+    "type": "seminary",
+    "location": "pat-jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 150,
+    "cost": 26000,
+    "programFocus": "Advanced Torah Study & Halacha",
+    "description": "The Jeanie Schottenstein Center for Advanced Torah Study for Women. A rigorous institution focused on advanced Jewish learning with text-based Torah study emphasizing serious scholarship.",
+    "website": "https://nishmat.net",
+    "phone": "972-2-6404333",
+    "email": "info@nishmat.net",
+    "address": "The Alisa M. Flatow Building, Berel Locker 26A, Pat, Jerusalem, 9328249, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "advanced",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Community-based Shabbat experiences"
+    },
+    "distances": {
+      "kotel": "3.5 km",
+      "centerCity": "2.5 km",
+      "shopping": "0.5 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-5 hours"
+    },
+    "amenities": {
+      "nearby": ["Supermarket", "Pharmacy", "Cafe"],
+      "onSite": ["Library", "Beit Midrash", "Study Halls"]
+    },
+    "transportation": {
+      "buses": ["19", "34"],
+      "taxiAvailability": "High",
+      "walkability": "Excellent"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Advanced Learning", "Halacha Focus", "Modern Orthodox"]
+  },
+  {
+    "name": "Tiferet",
+    "type": "seminary",
+    "location": "ramat-beit-shemesh",
+    "hashkafa": "religious-zionist",
+    "size": "medium",
+    "studentCount": 120,
+    "cost": 25000,
+    "programFocus": "Religious Zionism & Torah Study",
+    "description": "A Religious-Zionist school that aims to give students an all-encompassing Israel experience. Over 70 challenging classes with emphasis on connections to Torah, Am Yisrael, Eretz Yisrael, and Medinat Yisrael.",
+    "website": "https://www.tiferetcenter.com",
+    "phone": "+972-2-999-7957",
+    "email": "info@tiferetcenter.com",
+    "address": "2 Nachal Shimshon, Ramat Beit Shemesh, 99622, Israel",
+    "applicationDeadline": "Apply through applytosem.org",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In",
+      "details": "Shabbat meals hosted in teachers' homes"
+    },
+    "distances": {
+      "kotel": "35 km",
+      "centerCity": "30 km",
+      "shopping": "0.5 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Multiple days weekly",
+      "hours": "Varies"
+    },
+    "amenities": {
+      "nearby": ["Shopping centers", "Parks"],
+      "onSite": ["Dormitory", "Study halls", "Recreation areas"]
+    },
+    "transportation": {
+      "buses": ["418", "419"],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Yango Deli"]
+    },
+    "tags": ["Religious Zionist", "Warm Environment", "Tiyulim"]
+  },
+  {
+    "name": "Midreshet HaRova",
+    "type": "seminary",
+    "location": "old-city-jerusalem",
+    "hashkafa": "religious-zionist",
+    "size": "small",
+    "studentCount": 70,
+    "cost": 27000,
+    "programFocus": "Rav Kook Philosophy & Zionist Torah Study",
+    "description": "Located in the heart of the Old City of Jerusalem. Affiliated with the teachings of Rav Kook, focusing on deep Torah learning and personal spiritual development with a Zionist-Religious approach.",
+    "website": "https://www.harova.org",
+    "phone": "02-6265999",
+    "email": "shnatmidrasha@harova.org",
+    "address": "Chabad Street 50, Old City, Jerusalem",
+    "applicationDeadline": "Rolling admissions",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In",
+      "details": "Integrated into full-year residential program"
+    },
+    "distances": {
+      "kotel": "0.3 km",
+      "centerCity": "2 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "both",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": false,
+      "day": "",
+      "hours": ""
+    },
+    "amenities": {
+      "nearby": ["Kotel", "Jewish Quarter shops", "Cafes"],
+      "onSite": ["Library", "Study halls", "Dormitory"]
+    },
+    "transportation": {
+      "buses": ["1", "2", "38"],
+      "taxiAvailability": "Medium",
+      "walkability": "Excellent"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": false,
+      "services": ["Limited to Old City"]
+    },
+    "tags": ["Old City", "Rav Kook", "Religious Zionist", "Small Community"]
+  },
+  {
+    "name": "Bnot Torah (Sharfman's)",
+    "type": "seminary",
+    "location": "sanhedria-jerusalem",
+    "hashkafa": "yeshivish",
+    "size": "large",
+    "studentCount": 200,
+    "cost": 24000,
+    "programFocus": "Torah Learning & Personal Development",
+    "description": "Connect. Inspire. Grow. Emphasizes Torah learning with focus on personal development and connection to Israel. Features 32 weekly classes, 3 daily meals, 23+ overnight trips, and 1:1 staff-to-student ratio.",
+    "website": "https://bnottorah.com",
+    "phone": "02.581.4382",
+    "email": "Info@BnotTorah.com",
+    "address": "27 Rechov Yam Suf, Jerusalem, Israel",
+    "applicationDeadline": "Apply online",
+    "academicLevel": "beginner-to-intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Shabbatonim and holiday programming included"
+    },
+    "distances": {
+      "kotel": "5 km",
+      "centerCity": "4 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "2-4 hours"
+    },
+    "amenities": {
+      "nearby": ["Supermarket", "Pharmacy", "Parks"],
+      "onSite": ["Beit Midrash", "Recreation room", "Computer lab"]
+    },
+    "transportation": {
+      "buses": ["4", "9", "35"],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis", "Yango Deli"]
+    },
+    "tags": ["Large School", "Extensive Trips", "Personal Attention", "Yeshivish"]
+  },
+  {
+    "name": "Midreshet Torat Chessed",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 100,
+    "cost": 25000,
+    "programFocus": "Torah Learning & Chessed",
+    "description": "A multi-faceted year-in-Israel experience, combining serious Torah learning with meaningful and intensive chessed (acts of kindness and charitable work).",
+    "website": "https://toratchessed.com",
+    "phone": "",
+    "email": "",
+    "address": "Jerusalem, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Community-based experiences"
+    },
+    "distances": {
+      "kotel": "4 km",
+      "centerCity": "3 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Multiple days weekly",
+      "hours": "5+ hours"
+    },
+    "amenities": {
+      "nearby": ["Supermarket", "Pharmacy"],
+      "onSite": ["Study halls", "Dormitory"]
+    },
+    "transportation": {
+      "buses": [],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Chessed Focus", "Modern Orthodox", "Community Service"]
+  },
+  {
+    "name": "Aish Gesher for Women",
+    "type": "seminary",
+    "location": "rechavya-jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 100,
+    "cost": 26000,
+    "programFocus": "Leadership & Personal Growth",
+    "description": "Grounded in the timeless values of Aish HaTorah, emphasizing authentic personal and spiritual growth with high-level foundational Jewish learning classes taught by world-class educators.",
+    "website": "https://aishgesherwomen.com",
+    "phone": "",
+    "email": "efgwomen@aish.com",
+    "address": "Rechavya, Jerusalem, Israel",
+    "applicationDeadline": "Apply through applytosem.org",
+    "academicLevel": "beginner-to-intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Access to Aish World Center programming"
+    },
+    "distances": {
+      "kotel": "1.5 km",
+      "centerCity": "1 km",
+      "shopping": "0.5 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": false,
+      "day": "",
+      "hours": ""
+    },
+    "amenities": {
+      "nearby": ["Cafes", "Restaurants", "Shopping"],
+      "onSite": ["Study halls", "Access to Aish Center"]
+    },
+    "transportation": {
+      "buses": ["6", "18", "21"],
+      "taxiAvailability": "High",
+      "walkability": "Excellent"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Leadership Development", "Aish Network", "Personal Growth"]
+  },
+  {
+    "name": "Amudim Seminary",
+    "type": "seminary",
+    "location": "modiin",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 90,
+    "cost": 25000,
+    "programFocus": "Torah Study with Internships",
+    "description": "An Israel Gap Year Seminary Program for Post High School Modern Orthodox Jewish Women. Combines traditional and academic Torah perspectives with internships and community service opportunities.",
+    "website": "https://www.amudimisrael.org",
+    "phone": "",
+    "email": "info@amudimisrael.org",
+    "address": "Modi'in, Israel",
+    "applicationDeadline": "Apply through applytosem.org",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Shabbat and holiday observances included"
+    },
+    "distances": {
+      "kotel": "40 km",
+      "centerCity": "35 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-5 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping centers", "Parks"],
+      "onSite": ["Beit Midrash", "Study halls"]
+    },
+    "transportation": {
+      "buses": ["201", "301"],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Modern Orthodox", "Internships", "Modi'in Location"]
+  },
+  {
+    "name": "Machon Maayan",
+    "type": "seminary",
+    "location": "givat-washington",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 110,
+    "cost": 24000,
+    "programFocus": "Learn, Give, Explore Israel",
+    "description": "Build a customized schedule of inspirational Torah classes, volunteer opportunities, professional internships in chesed, and weekly seminars examining Israeli society. Affiliated with OU, YU, and Bnei Akiva.",
+    "website": "https://machonmaayan.org",
+    "phone": "",
+    "email": "",
+    "address": "Givat Washington, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Community and family placements"
+    },
+    "distances": {
+      "kotel": "45 km",
+      "centerCity": "40 km",
+      "shopping": "2 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Multiple days weekly",
+      "hours": "5+ hours"
+    },
+    "amenities": {
+      "nearby": ["Nature trails", "Community center"],
+      "onSite": ["Study halls", "Recreational facilities"]
+    },
+    "transportation": {
+      "buses": ["433"],
+      "taxiAvailability": "Medium",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": false,
+      "groceries": false,
+      "services": []
+    },
+    "tags": ["Chesed Focus", "Internships", "Customizable Schedule"]
+  },
+  {
+    "name": "Michlelet Mevaseret Yerushalayim",
+    "type": "seminary",
+    "location": "mevaseret-zion",
+    "hashkafa": "religious-zionist",
+    "size": "medium",
+    "studentCount": 100,
+    "cost": 25000,
+    "programFocus": "High-Level Torah Learning & Connection to Israel",
+    "description": "Learn Torah on a high level, think about issues and relate them to life, grow spiritually, and connect with Israel. Features Chavruta learning methodology with Shana Alef and Shana Bet programs.",
+    "website": "https://mevaseret.org",
+    "phone": "0524711480",
+    "email": "",
+    "address": "Mevaseret Zion, Jerusalem area, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Shabbatonim and holiday programming"
+    },
+    "distances": {
+      "kotel": "12 km",
+      "centerCity": "10 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "2-4 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Parks"],
+      "onSite": ["Beit Midrash", "Study halls", "Dormitory"]
+    },
+    "transportation": {
+      "buses": ["185", "186"],
+      "taxiAvailability": "Medium",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt"]
+    },
+    "tags": ["Chavruta Learning", "Shana Bet Available", "Religious Zionist"]
+  },
+  {
+    "name": "Midreshet AMIT",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "religious-zionist",
+    "size": "medium",
+    "studentCount": 120,
+    "cost": 24000,
+    "programFocus": "Live Torah, Live Chessed, Live Israel",
+    "description": "An integrated approach combining religious study, community service initiatives, and Israel-focused programming including field trips, Shabbaton retreats, and chesed trips.",
+    "website": "https://www.midreshetamit.org",
+    "phone": "",
+    "email": "",
+    "address": "Jerusalem, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Shabbatonim and holiday programming"
+    },
+    "distances": {
+      "kotel": "4 km",
+      "centerCity": "3 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Multiple days weekly",
+      "hours": "4-6 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Cafes"],
+      "onSite": ["Study halls", "Recreation areas"]
+    },
+    "transportation": {
+      "buses": [],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Chesed Focus", "Israel Experience", "Religious Zionist"]
+  },
+  {
+    "name": "Midreshet Eshel",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "sephardic",
+    "size": "small",
+    "studentCount": 60,
+    "cost": 24000,
+    "programFocus": "Sephardic Torah Study",
+    "description": "Sephardic Seminary providing residential facilities with structured educational programming, weekly class schedules, guest speaker series, and community engagement through Hesed programs.",
+    "website": "https://sephardicseminary.org",
+    "phone": "",
+    "email": "",
+    "address": "Jerusalem, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In",
+      "details": "Shabbat and holiday celebrations"
+    },
+    "distances": {
+      "kotel": "3 km",
+      "centerCity": "2 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-4 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Cafes"],
+      "onSite": ["Dormitory", "Study halls"]
+    },
+    "transportation": {
+      "buses": [],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Sephardic", "Small Community", "Guest Speakers"]
+  },
+  {
+    "name": "Midreshet Lev",
+    "type": "seminary",
+    "location": "ramat-beit-shemesh",
+    "hashkafa": "religious-zionist",
+    "size": "small",
+    "studentCount": 70,
+    "cost": 26000,
+    "programFocus": "Religious Zionism & Eretz Yisrael",
+    "description": "Profound focus on Eretz Yisrael, Medinat Yisrael & Am Yisrael. Blends intellectual rigor, personalized support, profound connection to Israel, and unwavering spiritual development with uncompromising commitment to Halacha.",
+    "website": "https://midreshetlev.org",
+    "phone": "+972 (54) 708-9505",
+    "email": "egrossman@midreshetlev.org",
+    "address": "Roi Klein 21, Apt. 9, Ramat Bet Shemesh, 9965248, Israel",
+    "applicationDeadline": "Apply through app.midreshetlev.org",
+    "academicLevel": "advanced",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In",
+      "details": "Staff members live within walking distance"
+    },
+    "distances": {
+      "kotel": "35 km",
+      "centerCity": "30 km",
+      "shopping": "0.5 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-5 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Neve Shamir community"],
+      "onSite": ["Study halls", "Sports facilities", "Arts center"]
+    },
+    "transportation": {
+      "buses": ["418", "419"],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Yango Deli"]
+    },
+    "tags": ["Religious Zionist", "Small Community", "Personal Attention", "Neve Shamir"]
+  },
+  {
+    "name": "Midreshet Lindenbaum",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "large",
+    "studentCount": 180,
+    "cost": 27000,
+    "programFocus": "Rigorous Torah Study & Critical Thinking",
+    "description": "True religious growth based on understanding. Provides rigorous, challenging learning program in Tanakh and Gemara with supportive religious environment, individual spiritual mentorship, and Israel cultural integration.",
+    "website": "https://www.midreshet-lindenbaum.org.il",
+    "phone": "+972-2-6710043",
+    "email": "inquiries@lindenbaum.org.il",
+    "address": "Leib Yaffe 51, Jerusalem 9339082, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "advanced",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Community-based placements"
+    },
+    "distances": {
+      "kotel": "4 km",
+      "centerCity": "2 km",
+      "shopping": "0.5 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-5 hours"
+    },
+    "amenities": {
+      "nearby": ["Supermarket", "Cafes", "Shopping"],
+      "onSite": ["Library", "Beit Midrash", "Study halls"]
+    },
+    "transportation": {
+      "buses": ["6", "18", "32"],
+      "taxiAvailability": "High",
+      "walkability": "Excellent"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis", "Yango Deli"]
+    },
+    "tags": ["Advanced Learning", "Gemara Track", "Large School", "YU Affiliated"]
+  },
+  {
+    "name": "Migdal Oz",
+    "type": "seminary",
+    "location": "kibbutz-migdal-oz",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 100,
+    "cost": 28000,
+    "programFocus": "Intensive Talmud Study & Israeli Integration",
+    "description": "Stella K. Abraham Beit Midrash for Women. Combines high caliber Talmud Torah and meaningful spiritual growth, independence and support, serious learning with flexible schedule. Classes taught in Hebrew alongside Israeli students.",
+    "website": "https://skamigdaloz.org",
+    "phone": "02-9934520",
+    "email": "migdaloz@haretzion.org.il",
+    "address": "Kibbutz Migdal Oz, Gush Etzion 9091500, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "advanced",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In/Out",
+      "details": "Kibbutz community integration"
+    },
+    "distances": {
+      "kotel": "20 km",
+      "centerCity": "25 km",
+      "shopping": "3 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": false,
+      "day": "",
+      "hours": ""
+    },
+    "amenities": {
+      "nearby": ["Kibbutz facilities", "Nature trails"],
+      "onSite": ["Beit Midrash", "Library", "Study halls"]
+    },
+    "transportation": {
+      "buses": ["160", "163"],
+      "taxiAvailability": "Medium",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": false,
+      "groceries": false,
+      "services": []
+    },
+    "tags": ["Talmud Focus", "Kibbutz Life", "Hebrew Instruction", "Gush Etzion"]
+  },
+  {
+    "name": "Sha'alvim for Women",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "religious-zionist",
+    "size": "medium",
+    "studentCount": 110,
+    "cost": 26000,
+    "programFocus": "Advanced Torah Learning & Independent Study",
+    "description": "Commitment to Torat Yisrael, Am Yisrael, Eretz Yisrael and Medinat Yisrael. Prepares students to become independent Torah learners and thinkers through challenging shiurim with incredible teachers in a caring warm environment.",
+    "website": "https://sfw.shaalvim.org",
+    "phone": "02-678-4062",
+    "email": "sfw.shaalvim@gmail.com",
+    "address": "Ha-Dishon St 21, Jerusalem, Israel",
+    "applicationDeadline": "Apply through applytosem.org",
+    "academicLevel": "advanced",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Shabbatonim and guest speaker programs"
+    },
+    "distances": {
+      "kotel": "5 km",
+      "centerCity": "4 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": false,
+      "day": "",
+      "hours": ""
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Cafes"],
+      "onSite": ["Beit Midrash", "Study halls", "Night seder facility"]
+    },
+    "transportation": {
+      "buses": ["6", "18", "32"],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Advanced Learning", "Independent Study", "Night Seder", "Religious Zionist"]
+  },
+  {
+    "name": "Tomer Devorah",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 95,
+    "cost": 25000,
+    "programFocus": "Character Development & Torah Study",
+    "description": "Institute of Advanced Studies for Women. Focus on character development, Jewish heritage and Torah study with tiyulim, Shabbatonim, and community service programs. Affiliated with YU and Touro College.",
+    "website": "https://www.tomerdevorah.net",
+    "phone": "+972-2-571-6633",
+    "email": "",
+    "address": "Jerusalem, Israel",
+    "applicationDeadline": "Apply online",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Shabbatonim and weekend retreats"
+    },
+    "distances": {
+      "kotel": "3 km",
+      "centerCity": "2 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-4 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Cafes"],
+      "onSite": ["Study halls", "Recreation areas"]
+    },
+    "transportation": {
+      "buses": [],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Character Development", "YU Affiliated", "Touro Affiliated"]
+  },
+  {
+    "name": "Midreshet Moriah",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "large",
+    "studentCount": 150,
+    "cost": 25000,
+    "programFocus": "Customizable Curriculum & Individual Growth",
+    "description": "Over 150 courses available with flexible, customizable curriculum. Students create their own schedules aligned with personal goals. Multiple teachers offering different content and personal hashkafot.",
+    "website": "https://www.midreshetmoriah.org",
+    "phone": "",
+    "email": "",
+    "address": "Jerusalem, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Shabbatonim and community experiences"
+    },
+    "distances": {
+      "kotel": "4 km",
+      "centerCity": "3 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "2-4 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Cafes"],
+      "onSite": ["Study halls", "Library"]
+    },
+    "transportation": {
+      "buses": [],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Customizable Schedule", "150+ Courses", "Individual Hashkafa", "YU Affiliated"]
+  },
+  {
+    "name": "Midreshet Tehillah",
+    "type": "seminary",
+    "location": "har-nof-jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "small",
+    "studentCount": 60,
+    "cost": 26000,
+    "programFocus": "Intellectual Challenge & Personal Exploration",
+    "description": "Located on Neve Yerushalayim campus in Har Nof. Emphasizes intellectual challenge and personal spiritual exploration with conceptual Torah study. Small class sizes enable individual attention. Established 2003.",
+    "website": "https://midreshettehillah.com",
+    "phone": "",
+    "email": "",
+    "address": "Neve Yerushalayim campus, Har Nof, Jerusalem, Israel",
+    "applicationDeadline": "Apply through applytosem.org",
+    "academicLevel": "advanced",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Community placements and on-campus options"
+    },
+    "distances": {
+      "kotel": "6 km",
+      "centerCity": "5 km",
+      "shopping": "0.5 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": false,
+      "day": "",
+      "hours": ""
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Supermarket"],
+      "onSite": ["Beit Midrash", "Library", "Study halls"]
+    },
+    "transportation": {
+      "buses": ["4", "12", "40"],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Small Classes", "Conceptual Learning", "Har Nof", "Shana Bet Available"]
+  },
+  {
+    "name": "Midreshet Torah v'Avodah (MTVA)",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "religious-zionist",
+    "size": "medium",
+    "studentCount": 100,
+    "cost": 26000,
+    "programFocus": "Bnei Akiva Leadership & Service Learning",
+    "description": "Innovative Bnei Akiva midrasha emphasizing Torat Eretz Yisrael. Truly integrated experience featuring intensive Torah learning, Machon Leadership program, service learning, kibbutz living, tiyulim, and internships.",
+    "website": "https://www.mtvaisrael.org",
+    "phone": "(212) 465-9536",
+    "email": "contact@mtvaisrael.org",
+    "address": "Yossi Ben Yo'ezer St 32, Jerusalem, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Kibbutz and community experiences"
+    },
+    "distances": {
+      "kotel": "5 km",
+      "centerCity": "3 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Multiple days weekly",
+      "hours": "5+ hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Cafes"],
+      "onSite": ["Beit Midrash", "Central Jerusalem apartments"]
+    },
+    "transportation": {
+      "buses": [],
+      "taxiAvailability": "High",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Bnei Akiva", "Leadership Program", "Kibbutz Experience", "Service Learning"]
+  }
+]

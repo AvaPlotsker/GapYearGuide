@@ -1,4 +1,4 @@
-// Comparison functionality
+m// Comparison functionality
 class ComparisonManager {
     constructor() {
         this.selectedSchools = [];
