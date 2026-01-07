@@ -11,12 +11,13 @@ import { reviewManager } from '../services/firebase';
 export default function BrowseSchools() {
   const { user, updateReviewsCache } = useApp();
   const [schools, setSchools] = useState([]);
-  const [filteredSchools, setFilteredSchools] = useState([]); // Start empty
+  const [filteredSchools, setFilteredSchools] = useState([]);
   const [selectedSchool, setSelectedSchool] = useState(null);
   const [compareSchools, setCompareSchools] = useState([]);
   const [showComparisonModal, setShowComparisonModal] = useState(false);
   const [showFilterPanel, setShowFilterPanel] = useState(false);
   const [topRecommendations, setTopRecommendations] = useState([]);
+  const [currentFeaturedIndex, setCurrentFeaturedIndex] = useState(0);
   const [openDropdowns, setOpenDropdowns] = useState({
     location: false,
     hashkafa: false,
@@ -24,7 +25,7 @@ export default function BrowseSchools() {
     size: false
   });
   const [filters, setFilters] = useState({
-    types: [], // Start with empty - user must select first
+    types: [],
     hashkafas: [],
     locations: [],
     academicLevels: [],
@@ -36,7 +37,6 @@ export default function BrowseSchools() {
     const loadSchools = async () => {
       const allSchools = await getSchoolsAsync();
       setSchools(allSchools);
-      // Don't set filteredSchools here - leave it empty initially
       loadAllReviews();
     };
     loadSchools();
@@ -50,7 +50,16 @@ export default function BrowseSchools() {
 
   useEffect(() => {
     applyFilters();
-  }, [filters, searchTerm]);
+  }, [filters, searchTerm, schools]);
+
+  // Auto-rotate recommendations carousel
+  useEffect(() => {
+    if (topRecommendations.length === 0) return;
+    const interval = setInterval(() => {
+      setCurrentFeaturedIndex((prev) => (prev + 1) % topRecommendations.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [topRecommendations.length]);
 
   const loadAllReviews = async () => {
     const result = await reviewManager.getAllReviews();
@@ -70,9 +79,7 @@ export default function BrowseSchools() {
   };
 
   const loadTopRecommendations = () => {
-    if (!user) {
-      return;
-    }
+    if (!user) return;
 
     const prefs = user.preferences || {};
     const schoolTypes = Array.isArray(user.schoolType)
@@ -104,38 +111,30 @@ export default function BrowseSchools() {
   };
 
   const applyFilters = () => {
-    // If no type selected, show nothing
     if (filters.types.length === 0) {
       setFilteredSchools([]);
       return;
     }
 
     let result = [...schools];
-
-    // Type filter (required)
     result = result.filter(school => filters.types.includes(school.type));
 
-    // Hashkafa filter
     if (filters.hashkafas.length > 0) {
       result = result.filter(school => filters.hashkafas.includes(school.hashkafa));
     }
 
-    // Location filter
     if (filters.locations.length > 0) {
       result = result.filter(school => filters.locations.includes(school.location));
     }
 
-    // Academic Level filter
     if (filters.academicLevels.length > 0) {
       result = result.filter(school => filters.academicLevels.includes(school.academicLevel));
     }
 
-    // Size filter
     if (filters.sizes.length > 0) {
       result = result.filter(school => filters.sizes.includes(school.size));
     }
 
-    // Search filter
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
       result = result.filter(school =>
@@ -146,9 +145,7 @@ export default function BrowseSchools() {
       );
     }
 
-    // Sort alphabetically by name
     result.sort((a, b) => a.name.localeCompare(b.name));
-
     setFilteredSchools(result);
   };
 
@@ -208,57 +205,60 @@ export default function BrowseSchools() {
     setCompareSchools([]);
   };
 
+  const quickSelectCategory = (type) => {
+    setFilters(prev => ({ ...prev, types: [type] }));
+  };
+
   return (
     <main className="main-content">
-      <div className="container">
-        {/* Search and Filters Section */}
-        <section className="search-section">
-          {/* Type Selector */}
-          <div className="type-selector">
-            <label className="type-selector-label">I'm looking for:</label>
-            <div className="type-options">
-              <label className="type-option">
-                <input
-                  type="checkbox"
-                  name="typeFilter"
-                  value="seminary"
-                  checked={filters.types.includes('seminary')}
-                  onChange={(e) => handleFilterChange('types', e.target.value)}
-                />
-                <span>Seminary</span>
-              </label>
-              <label className="type-option">
-                <input
-                  type="checkbox"
-                  name="typeFilter"
-                  value="yeshiva"
-                  checked={filters.types.includes('yeshiva')}
-                  onChange={(e) => handleFilterChange('types', e.target.value)}
-                />
-                <span>Yeshiva</span>
-              </label>
-              <label className="type-option">
-                <input
-                  type="checkbox"
-                  name="typeFilter"
-                  value="gap-year-program"
-                  checked={filters.types.includes('gap-year-program')}
-                  onChange={(e) => handleFilterChange('types', e.target.value)}
-                />
-                <span>Gap Year Program</span>
-              </label>
+      {/* Hero Section */}
+      <section className="hero-modern">
+        <div className="hero-background">
+          <div className="gradient-orb orb-1"></div>
+          <div className="gradient-orb orb-2"></div>
+          <div className="gradient-orb orb-3"></div>
+        </div>
+        <div className="container">
+          <div className="hero-content-wrapper">
+            <h1>Find Your Perfect Gap Year in Israel</h1>
+            <p>Discover seminaries, yeshivas, and programs that match your goals and values</p>
+            <div className="hero-stats">
+              <div className="stat-item">
+                <div className="stat-number">{schools.length}+</div>
+                <div className="stat-label">Programs</div>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-item">
+                <div className="stat-number">5K+</div>
+                <div className="stat-label">Students Placed</div>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-item">
+                <div className="stat-number">15+</div>
+                <div className="stat-label">Cities</div>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="container">
+        {/* Search and Filters */}
+        <section className="search-section-modern">
+          <div className="search-header">
+            <h2>Search & Filter Programs</h2>
+            <p>Refine your search by location, hashkafa, size, and more</p>
           </div>
 
           <div className="search-bar">
             <input
               type="text"
               id="searchInput"
-              placeholder="Search schools by name, location, or hashkafa..."
+              placeholder="Search by name, location, or description..."
               className="search-input"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+              onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
             />
             <button id="searchBtn" className="btn btn-primary" onClick={handleSearch}>
               Search
@@ -271,7 +271,7 @@ export default function BrowseSchools() {
               className="btn btn-secondary"
               onClick={() => setShowFilterPanel(!showFilterPanel)}
             >
-              Filters
+              {showFilterPanel ? 'Hide Filters' : 'Show Filters'}
             </button>
             <div
               id="filterPanel"
@@ -423,7 +423,7 @@ export default function BrowseSchools() {
               disabled={compareSchools.length < 2}
               onClick={() => setShowComparisonModal(true)}
             >
-              Compare Selected (<span id="compareCount">{compareSchools.length}</span>)
+              Compare Selected ({compareSchools.length})
             </button>
             <button id="clearCompareBtn" className="btn btn-secondary" onClick={clearCompareSelection}>
               Clear Selection
@@ -431,28 +431,42 @@ export default function BrowseSchools() {
           </div>
         </section>
 
-        {/* Recommendations Section */}
-        {user && topRecommendations.length > 0 && (
-          <section className="recommendations-banner" id="recommendationsBanner">
-            <h3>✨ Recommended For You</h3>
-            <div id="recommendationsPreview" className="recommendations-preview">
-              {topRecommendations.map(school => (
-                <div
-                  key={school.id}
-                  className="recommendation-mini-card"
-                  onClick={() => handleViewDetails(school.id)}
-                >
-                  <span className="match-badge">{school.matchPercentage}% Match</span>
-                  <h4>{school.name}</h4>
-                  <p>{school.location.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</p>
-                </div>
-              ))}
+        {/* Category Quick Select */}
+        <section className="category-section" style={{ marginTop: 'var(--space-5)' }}>
+          <h2 className="section-title">Browse by Type</h2>
+          <div className="category-grid">
+            <div className="category-card" onClick={() => quickSelectCategory('seminary')}>
+              <div className="category-image seminary-img">
+                <div className="category-overlay"></div>
+              </div>
+              <div className="category-content">
+                <h3>Seminaries</h3>
+                <p>Torah study programs for young women</p>
+                <span className="category-arrow">→</span>
+              </div>
             </div>
-            <Link to="/recommendations" className="btn btn-secondary">
-              View All Recommendations
-            </Link>
-          </section>
-        )}
+            <div className="category-card" onClick={() => quickSelectCategory('yeshiva')}>
+              <div className="category-image yeshiva-img">
+                <div className="category-overlay"></div>
+              </div>
+              <div className="category-content">
+                <h3>Yeshivas</h3>
+                <p>Torah learning programs for young men</p>
+                <span className="category-arrow">→</span>
+              </div>
+            </div>
+            <div className="category-card" onClick={() => quickSelectCategory('gap-year-program')}>
+              <div className="category-image program-img">
+                <div className="category-overlay"></div>
+              </div>
+              <div className="category-content">
+                <h3>Gap Year Programs</h3>
+                <p>Comprehensive Israel experiences</p>
+                <span className="category-arrow">→</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Schools Grid */}
         <section className="schools-section">
@@ -468,13 +482,89 @@ export default function BrowseSchools() {
               />
             ))}
           </div>
-          {filteredSchools.length === 0 && (
+          {filteredSchools.length === 0 && filters.types.length > 0 && (
             <div className="empty-state">
               <h3>No schools found</h3>
               <p>Try adjusting your filters or search terms.</p>
             </div>
           )}
+          {filteredSchools.length === 0 && filters.types.length === 0 && (
+            <div className="empty-state">
+              <h3>Select a program type to begin</h3>
+              <p>Choose Seminary, Yeshiva, or Gap Year Program above to see schools.</p>
+            </div>
+          )}
         </section>
+
+        {/* Recommendations Section */}
+        {user && topRecommendations.length > 0 && (
+          <section className="featured-section recommendations-carousel" style={{ marginTop: 'var(--space-6)' }}>
+            <div className="section-header-flex">
+              <div>
+                <h2 className="section-title">You Might Also Like</h2>
+                <p className="section-subtitle">Based on your preferences</p>
+              </div>
+              <div className="carousel-controls">
+                <button
+                  className="carousel-btn"
+                  onClick={() => setCurrentFeaturedIndex((prev) =>
+                    prev === 0 ? topRecommendations.length - 1 : prev - 1
+                  )}
+                >
+                  ←
+                </button>
+                <button
+                  className="carousel-btn"
+                  onClick={() => setCurrentFeaturedIndex((prev) =>
+                    (prev + 1) % topRecommendations.length
+                  )}
+                >
+                  →
+                </button>
+              </div>
+            </div>
+
+            <div className="featured-carousel">
+              <div
+                className="carousel-track"
+                style={{ transform: `translateX(-${currentFeaturedIndex * 100}%)` }}
+              >
+                {topRecommendations.map((school) => (
+                  <div key={school.id} className="featured-card" onClick={() => handleViewDetails(school.id)}>
+                    <div className="featured-image">
+                      <div className="featured-badge">{school.matchPercentage}% Match</div>
+                    </div>
+                    <div className="featured-content">
+                      <h3>{school.name}</h3>
+                      <p className="featured-location">{school.location.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</p>
+                      <p className="featured-description">{school.description?.substring(0, 150)}...</p>
+                      <div className="featured-footer">
+                        <span className="featured-cost">${school.cost?.toLocaleString()}/year</span>
+                        <span className="featured-cta">View Details →</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="carousel-dots">
+              {topRecommendations.map((_, index) => (
+                <button
+                  key={index}
+                  className={`dot ${index === currentFeaturedIndex ? 'active' : ''}`}
+                  onClick={() => setCurrentFeaturedIndex(index)}
+                ></button>
+              ))}
+            </div>
+
+            <div style={{ textAlign: 'center', marginTop: 'var(--space-4)' }}>
+              <Link to="/recommendations" className="btn btn-secondary">
+                View All Recommendations
+              </Link>
+            </div>
+          </section>
+        )}
       </div>
 
       {/* Comparison Modal */}

@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Admin from './pages/Admin';
 import ImportSchools from './pages/ImportSchools';
+import SchoolScraper from './pages/SchoolScraper';
 import './styles.css';
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
           <Route path="/signup" element={user ? <Navigate to="/browse" /> : <Signup />} />
           <Route path="/admin" element={user ? <Admin /> : <Navigate to="/login" />} />
           <Route path="/import" element={user ? <ImportSchools /> : <Navigate to="/login" />} />
+          <Route path="/scraper" element={user ? <SchoolScraper /> : <Navigate to="/login" />} />
         </Routes>
         <Footer />
       </div>

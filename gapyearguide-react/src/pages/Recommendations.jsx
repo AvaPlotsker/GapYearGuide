@@ -138,12 +138,11 @@ export default function Recommendations() {
         {/* Match Info Banner */}
         <section className="match-info-banner">
           <div className="match-info-content">
-            <div className="match-info-icon">✨</div>
             <div className="match-info-text">
-              <h3>We found {recommendations.length} great {recommendations.length === 1 ? 'match' : 'matches'} for you!</h3>
+              <h3>We found {recommendations.length} great {recommendations.length === 1 ? 'match' : 'matches'} for you</h3>
               <p>Based on your preferences: {getPreferencesText()}</p>
             </div>
-            <Link to="/profile" className="btn btn-secondary btn-small">Update Preferences</Link>
+            <Link to="/profile" className="btn btn-secondary">Update Preferences</Link>
           </div>
         </section>
 

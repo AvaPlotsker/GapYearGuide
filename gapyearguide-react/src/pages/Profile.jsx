@@ -634,17 +634,30 @@ export default function Profile() {
             {/* Quick Links */}
             <section className="quick-links">
               <Link to="/favorites" className="quick-link-card">
-                <div className="quick-link-icon">❤️</div>
+                <div className="quick-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </div>
                 <h4>My Favorites</h4>
                 <p>{stats.favorites} schools saved</p>
               </Link>
               <Link to="/recommendations" className="quick-link-card">
-                <div className="quick-link-icon">✨</div>
+                <div className="quick-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
                 <h4>Recommendations</h4>
                 <p>{stats.matches} schools match your preferences</p>
               </Link>
               <Link to="/browse" className="quick-link-card">
-                <div className="quick-link-icon">🔍</div>
+                <div className="quick-link-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
                 <h4>Browse Schools</h4>
                 <p>Explore all programs</p>
               </Link>

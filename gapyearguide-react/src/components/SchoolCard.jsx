@@ -16,24 +16,6 @@ export default function SchoolCard({ school, onViewDetails, showCompare = false,
     ).join(' ');
   };
 
-  const formatShanaBet = (shanaBet) => {
-    if (!shanaBet?.offered) {
-      return 'Not offered';
-    }
-    const programType = shanaBet.programType === 'both' ? 'Madricha & Student' :
-                        shanaBet.programType === 'madricha' ? 'Madricha only' : 'Student only';
-    const duration = shanaBet.duration === 'both' ? 'Full/Half year' :
-                     shanaBet.duration === 'full-year' ? 'Full year' : 'Half year';
-    return `${programType}, ${duration}`;
-  };
-
-  const formatShabbos = (shabbos) => {
-    if (!shabbos?.pattern) return 'N/A';
-    if (shabbos.details) {
-      return `${shabbos.pattern} (${shabbos.details})`;
-    }
-    return shabbos.pattern;
-  };
 
   // Get rating from reviews cache
   const getSchoolRatingInfo = () => {
@@ -150,40 +132,21 @@ export default function SchoolCard({ school, onViewDetails, showCompare = false,
           <span className="info-value">{school.studentCount}</span>
         </div>
         <div className="info-row">
-          <span className="info-label">Annual Cost</span>
-          <span className="info-value">${school.cost.toLocaleString()}</span>
-        </div>
-        <div className="info-row">
-          <span className="info-label">Meals</span>
-          <span className="info-value">
-            {school.meals?.perDay && school.meals?.included?.length > 0
-              ? `${school.meals.perDay} (${school.meals.included.join(', ')})`
-              : 'N/A'}
-          </span>
-        </div>
-        <div className="info-row">
-          <span className="info-label">Shabbos</span>
-          <span className="info-value">{formatShabbos(school.shabbos)}</span>
-        </div>
-        <div className="info-row">
-          <span className="info-label">Distance to Kotel</span>
-          <span className="info-value">{school.distances?.kotel || 'N/A'}</span>
-        </div>
-        <div className="info-row">
-          <span className="info-label">Shana Bet</span>
-          <span className="info-value">{formatShanaBet(school.shanaBet)}</span>
-        </div>
-        <div className="info-row">
-          <span className="info-label">Chessed Day</span>
-          <span className="info-value">{school.chessed?.day || 'N/A'}</span>
+          <span className="info-label">Cost</span>
+          <span className="info-value">${school.cost.toLocaleString()}/year</span>
         </div>
       </div>
 
-      <div className="school-tags">
-        {school.tags && school.tags.map((tag, index) => (
-          <span key={index} className="tag">{tag}</span>
-        ))}
-      </div>
+      {school.tags && school.tags.length > 0 && (
+        <div className="school-tags">
+          {school.tags.slice(0, 3).map((tag, index) => (
+            <span key={index} className="tag">{tag}</span>
+          ))}
+          {school.tags.length > 3 && (
+            <span className="tag tag-more">+{school.tags.length - 3} more</span>
+          )}
+        </div>
+      )}
     </div>
   );
 }

@@ -440,33 +440,33 @@
     "tags": ["Chesed Focus", "Internships", "Customizable Schedule"]
   },
   {
-    "name": "Michlelet Mevaseret Yerushalayim",
+    "name": "Michlelet Mevaseret Yerushalayim (MMY)",
     "type": "seminary",
-    "location": "mevaseret-zion",
-    "hashkafa": "religious-zionist",
+    "location": "baka-jerusalem",
+    "hashkafa": "modern-orthodox",
     "size": "medium",
-    "studentCount": 100,
-    "cost": 25000,
-    "programFocus": "High-Level Torah Learning & Connection to Israel",
-    "description": "Learn Torah on a high level, think about issues and relate them to life, grow spiritually, and connect with Israel. Features Chavruta learning methodology with Shana Alef and Shana Bet programs.",
+    "studentCount": 140,
+    "cost": 26500,
+    "programFocus": "Advanced Torah Study & Critical Thinking",
+    "description": "A Jerusalem seminary for post-high school girls focusing on advanced Torah study, critical thinking about religious and life issues, spiritual growth through Torah engagement, and connection to Israel. Emphasizes chavruta learning style, high-level Beit Medrash learning, and developing independent thinking in a Modern Orthodox Religious Zionist framework.",
     "website": "https://mevaseret.org",
-    "phone": "0524711480",
-    "email": "",
-    "address": "Mevaseret Zion, Jerusalem area, Israel",
-    "applicationDeadline": "Contact school for details",
-    "academicLevel": "intermediate",
+    "phone": "+972-2-652-7257",
+    "email": "office@mmy.org.il",
+    "address": "Derech Chevron 60, Baka, Jerusalem, 9351308, Israel",
+    "applicationDeadline": "November 30",
+    "academicLevel": "advanced",
     "meals": {
-      "perDay": 3,
-      "included": ["Breakfast", "Lunch", "Dinner"]
+      "perDay": 2,
+      "included": ["Breakfast", "Lunch"]
     },
     "shabbos": {
       "pattern": "Varied",
-      "details": "Shabbatonim and holiday programming"
+      "details": "Mix of in-seminary Shabbatons and community placements"
     },
     "distances": {
-      "kotel": "12 km",
-      "centerCity": "10 km",
-      "shopping": "1 km"
+      "kotel": "3.0 km",
+      "centerCity": "2.0 km",
+      "shopping": "0.3 km"
     },
     "shanaBet": {
       "offered": true,
@@ -476,23 +476,23 @@
     "chessed": {
       "required": true,
       "day": "Weekly",
-      "hours": "2-4 hours"
+      "hours": "3-4 hours"
     },
     "amenities": {
-      "nearby": ["Shopping", "Parks"],
-      "onSite": ["Beit Midrash", "Study halls", "Dormitory"]
+      "nearby": ["Supermarket", "Cafes", "Pharmacy", "Restaurants"],
+      "onSite": ["Beit Midrash", "Library", "Study Halls", "Dining Room"]
     },
     "transportation": {
-      "buses": ["185", "186"],
-      "taxiAvailability": "Medium",
-      "walkability": "Good"
+      "buses": ["4", "14", "18"],
+      "taxiAvailability": "High",
+      "walkability": "Excellent"
     },
     "delivery": {
       "food": true,
       "groceries": true,
-      "services": ["Wolt"]
+      "services": ["Wolt", "Tenbis", "Ten Bis"]
     },
-    "tags": ["Chavruta Learning", "Shana Bet Available", "Religious Zionist"]
+    "tags": ["Advanced Learning", "Modern Orthodox", "Religious Zionist", "Beit Midrash Focus", "Critical Thinking"]
   },
   {
     "name": "Midreshet AMIT",

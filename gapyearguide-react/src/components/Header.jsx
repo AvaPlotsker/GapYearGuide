@@ -1,7 +1,18 @@
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Header() {
   const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const isActive = (path) => {
     // Handle both / and /browse for the Browse Schools link
@@ -14,16 +25,13 @@ export default function Header() {
   const isProfileActive = location.pathname === '/profile' ? 'active' : '';
 
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="header-content">
-          <div className="header-left">
-            <h1 className="logo">GapYearGuide</h1>
-            <p className="tagline">Find Your Perfect Seminary or Yeshiva in Israel</p>
-          </div>
+          <Link to="/" className="logo">GapYearGuide</Link>
           <nav className="main-nav">
             <Link to="/browse" className={isActive('/browse')}>Browse Schools</Link>
-            <Link to="/favorites" className={isActive('/favorites')}>My Favorites</Link>
+            <Link to="/favorites" className={isActive('/favorites')}>Favorites</Link>
             <Link to="/recommendations" className={isActive('/recommendations')}>Recommendations</Link>
             <Link to="/reviews" className={isActive('/reviews')}>Reviews</Link>
           </nav>
