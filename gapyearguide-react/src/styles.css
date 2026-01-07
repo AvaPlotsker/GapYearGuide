@@ -2307,7 +2307,7 @@ body {
     }
 
     .auth-container {
-        grid-template-columns: 1fr;
+        padding: 2rem 0;
     }
 
     .auth-card {
