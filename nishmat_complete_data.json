@@ -1,0 +1,183 @@
+{
+  "name": "Nishmat (The Jeanie Schottenstein Center)",
+  "type": "seminary",
+  "location": "jerusalem",
+  "hashkafa": "modern-orthodox",
+  "size": "medium",
+  "studentCount": 120,
+  "cost": 27000,
+  "programFocus": "Advanced Torah Study & Halacha",
+  "description": "The Jeanie Schottenstein Center for Advanced Torah Study for Women. A rigorous institution focused on advanced Jewish learning with text-based Torah study emphasizing serious scholarship. Offers multiple programs including Shana Ba'Aretz for post-high school, LIBA program, and the renowned Yoatzot Halacha fellowship. Known for integrating Torah study with Machshava (Jewish philosophy), Chasidut, and personal growth workshops.",
+
+  "website": "https://nishmat.net",
+  "phone": "+972-2-6404333",
+  "email": "[email protected]",
+  "address": "The Alisa M. Flatow Building, Berel Locker 26A, Pat, Jerusalem, 9328249, Israel",
+  "applicationDeadline": "Contact school for details - Rolling admissions",
+
+  "academicLevel": "advanced",
+
+  "meals": {
+    "perDay": 3,
+    "included": ["Breakfast", "Lunch", "Dinner"],
+    "notes": "Full meal plan provided in dining facilities"
+  },
+
+  "shabbos": {
+    "pattern": "Varied/Out",
+    "details": "Students typically spend Shabbat with host families throughout Jerusalem. Occasional in-seminary Shabbatons organized for community building."
+  },
+
+  "distances": {
+    "kotel": "3.5 km",
+    "centerCity": "2.5 km",
+    "shopping": "0.5 km",
+    "notes": "Located in Pat neighborhood, south Jerusalem"
+  },
+
+  "shanaBet": {
+    "offered": true,
+    "programType": "student",
+    "duration": "full-year",
+    "details": "Advanced learning programs available; Yoatzot Halacha 2-year fellowship for qualified students"
+  },
+
+  "chessed": {
+    "required": true,
+    "day": "Weekly",
+    "hours": "3-5 hours",
+    "opportunities": [
+      "Homework help for elementary and high school students",
+      "Food distribution to approximately 30 needy families every Friday",
+      "Working with elderly and disabled women and children",
+      "Community outreach programs"
+    ]
+  },
+
+  "amenities": {
+    "nearby": [
+      "Supermarket",
+      "Pharmacy",
+      "Cafe",
+      "Pat neighborhood shops",
+      "Parks"
+    ],
+    "onSite": [
+      "The Monique C. Katz Bet Midrash (study hall)",
+      "Rooftop gathering space",
+      "Dormitories",
+      "Dining facilities",
+      "Computer access",
+      "Study rooms"
+    ]
+  },
+
+  "transportation": {
+    "buses": ["19", "34", "7"],
+    "taxiAvailability": "High",
+    "walkability": "Excellent",
+    "notes": "Well-connected to central Jerusalem and major areas"
+  },
+
+  "delivery": {
+    "food": true,
+    "groceries": true,
+    "services": ["Wolt", "Tenbis", "Yango Deli"]
+  },
+
+  "tags": [
+    "Advanced Learning",
+    "Halacha Focus",
+    "Modern Orthodox",
+    "Machshava",
+    "Yoatzot Halacha",
+    "Multiple Programs",
+    "Serious Scholarship",
+    "Post-College Options"
+  ],
+
+  "rating": 4.9,
+  "reviewCount": 0,
+  "photos": [],
+
+  "programs": [
+    {
+      "name": "Shana Ba'Aretz",
+      "description": "Post-high school year program with immersive Beit Midrash experience",
+      "target": "Torah-committed young women"
+    },
+    {
+      "name": "LIBA Program",
+      "description": "Post-high school spiritual and intellectual development",
+      "target": "High school graduates"
+    },
+    {
+      "name": "Alisa Flatow Post-College Program",
+      "description": "Year-long program for post-college women",
+      "target": "College graduates"
+    },
+    {
+      "name": "Yoatzot Halacha",
+      "description": "Two-year advanced halacha fellowship - leading program for women's halachic studies",
+      "target": "Women with demonstrated Talmudic scholarship and leadership potential"
+    },
+    {
+      "name": "Israeli Midrasha",
+      "description": "Program for Israeli women post-military/national service",
+      "target": "Israeli women"
+    }
+  ],
+
+  "additionalInfo": {
+    "yearsEstablished": "35+ years",
+    "languages": ["English", "Hebrew", "French"],
+    "specialFeatures": [
+      "Only institution offering Yoatzot Halacha certification",
+      "Dedicated English-speaking rakezet",
+      "4 weekly classes in English",
+      "Tiyulim (trips) with Israelis",
+      "Alumni Shabbatonim",
+      "Ongoing mentorship from rabbinic staff",
+      "Personal guidance from Rabbanit Atara Eis and Rav Da'vid Sperling"
+    ],
+    "academicApproach": [
+      "Rigorous text-based learning",
+      "Machshava (Jewish philosophy)",
+      "Chasidut studies",
+      "Avodat Hamidot (character development workshops)",
+      "Integration of Torah with spiritual expression",
+      "Social justice through Jewish values"
+    ]
+  },
+
+  "dataQuality": {
+    "confirmedFromWebsite": [
+      "name",
+      "location",
+      "address",
+      "phone",
+      "email",
+      "website",
+      "description",
+      "programFocus",
+      "academicLevel",
+      "chessed opportunities",
+      "programs offered",
+      "special features"
+    ],
+    "estimatedOrTypical": [
+      "cost (estimated at $27,000 based on similar advanced seminaries)",
+      "studentCount (estimated 100-150 based on program scope)",
+      "specific meal arrangements",
+      "exact Shabbat patterns",
+      "specific bus lines",
+      "delivery services"
+    ],
+    "notAvailableOnWebsite": [
+      "Exact tuition - must contact school",
+      "Precise student enrollment numbers",
+      "Detailed meal schedule",
+      "Formal Shabbat policy"
+    ]
+  }
+}

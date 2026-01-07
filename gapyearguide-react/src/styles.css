@@ -1957,12 +1957,12 @@ body {
 
 /* Authentication Pages */
 .auth-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    align-items: start;
+    padding: 4rem 0;
 }
 
 .auth-card {
@@ -1971,6 +1971,8 @@ body {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     border: 2px solid var(--border-color);
+    width: 100%;
+    max-width: 480px;
 }
 
 .auth-card h2 {

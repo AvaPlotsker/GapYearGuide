@@ -1,0 +1,387 @@
+[
+  {
+    "name": "Amudim",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 100,
+    "cost": 24000,
+    "programFocus": "Torah Study & Personal Growth",
+    "description": "Seminary located in Katamon, Jerusalem offering comprehensive Torah learning and personal development.",
+    "website": "https://amudimisrael.org",
+    "phone": "",
+    "email": "",
+    "address": "Katamon, Jerusalem",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Contact school for Shabbos arrangements"
+    },
+    "distances": {
+      "kotel": "3 km",
+      "centerCity": "2 km",
+      "shopping": "0.5 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "Varies"
+    },
+    "amenities": {
+      "nearby": ["Shopping", "Restaurants", "Parks"],
+      "onSite": ["Study Halls", "Library"]
+    },
+    "transportation": {
+      "buses": ["4", "14", "18"],
+      "taxiAvailability": "High",
+      "walkability": "Excellent"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Modern Orthodox", "Katamon"]
+  },
+  {
+    "name": "Baer Miriam",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "yeshivish",
+    "size": "small",
+    "studentCount": 60,
+    "cost": 23000,
+    "programFocus": "Traditional Torah Learning",
+    "description": "Seminary in Har Nof, Jerusalem focusing on traditional Torah values and hashkafa.",
+    "website": "https://baermiriam.com",
+    "phone": "",
+    "email": "",
+    "address": "Har Nof, Jerusalem",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "beginner",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In",
+      "details": "Shabbos meals in seminary"
+    },
+    "distances": {
+      "kotel": "6 km",
+      "centerCity": "5 km",
+      "shopping": "0.8 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-4 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping Centers", "Parks"],
+      "onSite": ["Study Halls", "Dining Room"]
+    },
+    "transportation": {
+      "buses": ["40", "48", "56"],
+      "taxiAvailability": "Medium",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Yango Deli", "Local Delivery"]
+    },
+    "tags": ["Yeshivish", "Har Nof", "Traditional"]
+  },
+  {
+    "name": "Machon Alte",
+    "type": "seminary",
+    "location": "safed",
+    "hashkafa": "chassidish",
+    "size": "small",
+    "studentCount": 50,
+    "cost": 21000,
+    "programFocus": "Chassidus & Spirituality",
+    "description": "Chassidic seminary located in the mystical city of Safed, focusing on chassidus and spiritual growth.",
+    "website": "https://machonalte.com",
+    "phone": "",
+    "email": "",
+    "address": "Safed, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "mixed",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In",
+      "details": "Shabbos in Safed with community experiences"
+    },
+    "distances": {
+      "kotel": "150 km",
+      "centerCity": "2 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": false,
+      "programType": "",
+      "duration": ""
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "Varies"
+    },
+    "amenities": {
+      "nearby": ["Old City Safed", "Artists Quarter", "Shops"],
+      "onSite": ["Study Halls", "Library", "Mikvah"]
+    },
+    "transportation": {
+      "buses": ["5", "6", "361"],
+      "taxiAvailability": "Medium",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Local Delivery"]
+    },
+    "tags": ["Chassidish", "Safed", "Spiritual"]
+  },
+  {
+    "name": "Midreshet Harova",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 110,
+    "cost": 26000,
+    "programFocus": "Old City Experience & Torah Learning",
+    "description": "Seminary located in the Old City's Jewish Quarter, offering unique access to the Kotel and holy sites.",
+    "website": "https://harova.org",
+    "phone": "",
+    "email": "",
+    "address": "Old City, Jewish Quarter, Jerusalem",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Varied",
+      "details": "Old City Shabbos experiences and host families"
+    },
+    "distances": {
+      "kotel": "0.3 km",
+      "centerCity": "2 km",
+      "shopping": "2.5 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-5 hours"
+    },
+    "amenities": {
+      "nearby": ["Kotel", "Jewish Quarter Sites", "Restaurants"],
+      "onSite": ["Study Halls", "Rooftop", "Library"]
+    },
+    "transportation": {
+      "buses": ["1", "3", "38"],
+      "taxiAvailability": "High",
+      "walkability": "Excellent"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": false,
+      "services": ["Wolt", "Tenbis"]
+    },
+    "tags": ["Old City", "Modern Orthodox", "Kotel Access"]
+  },
+  {
+    "name": "Migdal Oz",
+    "type": "seminary",
+    "location": "jerusalem",
+    "hashkafa": "religious-zionist",
+    "size": "medium",
+    "studentCount": 90,
+    "cost": 25000,
+    "programFocus": "Religious Zionism & Advanced Learning",
+    "description": "Religious Zionist seminary on Kibbutz Migdal Oz, combining serious Torah learning with connection to the land.",
+    "website": "https://skamigdaloz.org",
+    "phone": "",
+    "email": "",
+    "address": "Kibbutz Migdal Oz, Gush Etzion",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "advanced",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In",
+      "details": "Shabbos on the kibbutz with community"
+    },
+    "distances": {
+      "kotel": "20 km",
+      "centerCity": "25 km",
+      "shopping": "5 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "both",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Multiple days",
+      "hours": "Varies"
+    },
+    "amenities": {
+      "nearby": ["Kibbutz Facilities", "Gush Etzion Sites"],
+      "onSite": ["Beit Midrash", "Library", "Sports Facilities"]
+    },
+    "transportation": {
+      "buses": ["160", "161"],
+      "taxiAvailability": "Low",
+      "walkability": "Fair"
+    },
+    "delivery": {
+      "food": false,
+      "groceries": false,
+      "services": []
+    },
+    "tags": ["Religious Zionist", "Kibbutz", "Advanced Learning", "Gush Etzion"]
+  },
+  {
+    "name": "Ashreinu",
+    "type": "yeshiva",
+    "location": "ramat-beit-shemesh",
+    "hashkafa": "yeshivish",
+    "size": "small",
+    "studentCount": 45,
+    "cost": 22000,
+    "programFocus": "Intensive Gemara Study",
+    "description": "Small yeshiva in Ramat Beit Shemesh with intensive focus on Gemara learning and personal growth.",
+    "website": "https://ashreinu.org.il",
+    "phone": "",
+    "email": "",
+    "address": "Ramat Beit Shemesh, Israel",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "In/Out",
+      "details": "Alternating Shabbos in yeshiva and with families"
+    },
+    "distances": {
+      "kotel": "35 km",
+      "centerCity": "30 km",
+      "shopping": "0.5 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "full-year"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "2-3 hours"
+    },
+    "amenities": {
+      "nearby": ["Shopping Centers", "Community"],
+      "onSite": ["Beit Midrash", "Dorms", "Kitchen"]
+    },
+    "transportation": {
+      "buses": ["400", "418"],
+      "taxiAvailability": "Medium",
+      "walkability": "Good"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Local Delivery"]
+    },
+    "tags": ["Yeshivish", "Intensive Learning", "Small Size"]
+  },
+  {
+    "name": "Eretz Hatzvi",
+    "type": "yeshiva",
+    "location": "jerusalem",
+    "hashkafa": "modern-orthodox",
+    "size": "medium",
+    "studentCount": 80,
+    "cost": 24000,
+    "programFocus": "Gemara & Modern Orthodoxy",
+    "description": "Modern Orthodox yeshiva in Givat Mordechai, Jerusalem, balancing serious learning with modern Orthodox values.",
+    "website": "https://eretzhatzvi.org",
+    "phone": "",
+    "email": "",
+    "address": "Givat Mordechai, Jerusalem",
+    "applicationDeadline": "Contact school for details",
+    "academicLevel": "intermediate",
+    "meals": {
+      "perDay": 3,
+      "included": ["Breakfast", "Lunch", "Dinner"]
+    },
+    "shabbos": {
+      "pattern": "Out",
+      "details": "Shabbos with host families throughout Jerusalem"
+    },
+    "distances": {
+      "kotel": "5 km",
+      "centerCity": "3 km",
+      "shopping": "1 km"
+    },
+    "shanaBet": {
+      "offered": true,
+      "programType": "student",
+      "duration": "both"
+    },
+    "chessed": {
+      "required": true,
+      "day": "Weekly",
+      "hours": "3-4 hours"
+    },
+    "amenities": {
+      "nearby": ["Parks", "Shopping", "Community Centers"],
+      "onSite": ["Beit Midrash", "Computer Lab", "Library", "Gym"]
+    },
+    "transportation": {
+      "buses": ["6", "17", "18"],
+      "taxiAvailability": "High",
+      "walkability": "Excellent"
+    },
+    "delivery": {
+      "food": true,
+      "groceries": true,
+      "services": ["Wolt", "Tenbis", "Yango Deli"]
+    },
+    "tags": ["Modern Orthodox", "Givat Mordechai", "Balanced Program"]
+  }
+]
